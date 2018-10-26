@@ -1,4 +1,4 @@
-package ru.stolpner.battleship;
+package ru.stolpner.battleship.util;
 
 import java.io.PrintStream;
 

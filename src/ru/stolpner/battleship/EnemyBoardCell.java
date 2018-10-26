@@ -1,4 +1,4 @@
 package ru.stolpner.battleship;
 
-public class Cell {
+public class EnemyBoardCell {
 }

@@ -1,5 +1,4 @@
 package ru.stolpner.battleship;
 
-public class Player {
-
+public class OwnBoardCell {
 }
