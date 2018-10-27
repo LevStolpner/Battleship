@@ -5,6 +5,7 @@ import ru.stolpner.battleship.cell.OwnBoardCell;
 import ru.stolpner.battleship.util.Rotation;
 
 import java.util.Arrays;
+import java.util.Objects;
 
 import static ru.stolpner.battleship.util.Constants.BOARD_SIZE;
 import static ru.stolpner.battleship.util.Constants.MAX_NUMBER_OF_SHIPS;
@@ -37,6 +38,7 @@ public class OwnBoard {
 
     private boolean isPlacementAvailable(int x, int y, int length, Rotation rotation) {
         return Arrays.stream(ships)
+                .filter(Objects::nonNull)
                 .noneMatch(ship -> isPlaceOccupiedByShip(ship, x, y, length, rotation));
     }
 
