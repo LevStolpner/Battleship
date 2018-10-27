@@ -10,8 +10,8 @@ import static ru.stolpner.battleship.util.Constants.SHIP_MAX_LENGTH;
 import static ru.stolpner.battleship.util.Constants.SHIP_MIN_LENGTH;
 
 public abstract class Player {
-    OwnBoard ownBoard;
-    EnemyBoard enemyBoard;
+    private OwnBoard ownBoard;
+    private EnemyBoard enemyBoard;
 
     public Player() {
         this.ownBoard = new OwnBoard();

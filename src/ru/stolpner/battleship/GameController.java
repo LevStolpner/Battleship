@@ -4,8 +4,8 @@ import ru.stolpner.battleship.player.Bot;
 import ru.stolpner.battleship.player.Human;
 
 public class GameController {
-    Human human;
-    Bot bot;
+    private Human human;
+    private Bot bot;
 
     public GameController() {
         this.human = new Human();

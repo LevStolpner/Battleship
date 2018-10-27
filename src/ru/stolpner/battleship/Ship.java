@@ -3,17 +3,24 @@ package ru.stolpner.battleship;
 import ru.stolpner.battleship.util.Rotation;
 
 public class Ship {
-    private int positionX;
-    private int positionY;
+    private int x;
+    private int y;
     private int length;
     private Rotation rotation;
 
-    public int getPositionX() {
-        return positionX;
+    public Ship(int x, int y, int length, Rotation rotation) {
+        this.x = x;
+        this.y = y;
+        this.length = length;
+        this.rotation = rotation;
     }
 
-    public int getPositionY() {
-        return positionY;
+    public int getX() {
+        return x;
+    }
+
+    public int getY() {
+        return y;
     }
 
     public int getLength() {
