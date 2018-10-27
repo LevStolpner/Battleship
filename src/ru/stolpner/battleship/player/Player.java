@@ -2,6 +2,7 @@ package ru.stolpner.battleship.player;
 
 import ru.stolpner.battleship.board.EnemyBoard;
 import ru.stolpner.battleship.board.OwnBoard;
+import ru.stolpner.battleship.util.Printer;
 import ru.stolpner.battleship.util.Rotation;
 
 import static ru.stolpner.battleship.util.Constants.BOARD_SIZE;
@@ -31,6 +32,7 @@ public abstract class Player {
                 }
             }
         }
+        Printer.printLine(ownBoard.getRepresentation());
     }
 
     private int getRandomPosition() {

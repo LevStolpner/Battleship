@@ -2,8 +2,24 @@ package ru.stolpner.battleship.cell;
 
 import ru.stolpner.battleship.Ship;
 
-public class OwnBoardCell {
-    public void setShip(Ship ship) {
+import java.util.Optional;
 
+public class OwnBoardCell {
+    private int x;
+    private int y;
+    private Ship ship;
+    private boolean isHit;
+
+    public OwnBoardCell(int x, int y) {
+        this.x = x;
+        this.y = y;
+    }
+
+    public Optional<Ship> getShip() {
+        return Optional.ofNullable(ship);
+    }
+
+    public void setShip(Ship ship) {
+        this.ship = ship;
     }
 }

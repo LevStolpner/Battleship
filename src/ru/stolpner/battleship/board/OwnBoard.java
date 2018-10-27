@@ -29,12 +29,28 @@ public class OwnBoard {
         setShipToCells(ship);
     }
 
+    public String getRepresentation() {
+        StringBuilder result = new StringBuilder();
+        for (int i = 0; i < BOARD_SIZE; i++) {
+            for (int j = 0; j < BOARD_SIZE; j++) {
+                if (cells[i][j].getShip().isPresent()) {
+                    result.append("S ");
+                } else {
+                    result.append("E ");
+                }
+            }
+            result.append("\n");
+        }
+
+        return result.toString();
+    }
+
     private void initialize() {
         ships = new Ship[MAX_NUMBER_OF_SHIPS];
         cells = new OwnBoardCell[BOARD_SIZE][BOARD_SIZE];
         for (int i = 0; i < BOARD_SIZE; i++) {
             for (int j = 0; j < BOARD_SIZE; j++) {
-                cells[i][j] = new OwnBoardCell();
+                cells[i][j] = new OwnBoardCell(i, j);
             }
         }
     }
