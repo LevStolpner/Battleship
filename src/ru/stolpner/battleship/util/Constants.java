@@ -6,6 +6,7 @@ import java.util.Map;
 
 public class Constants {
     public static final int BOARD_SIZE = 10;
+    public static final int MAX_NUMBER_OF_SHIPS = 10;
     public static final int SHIP_MIN_LENGTH = 4;
     public static final int SHIP_MAX_LENGTH = 4;
     public static final Map<Integer, Integer> NUMBER_OF_SHIPS_BY_LENGTH;

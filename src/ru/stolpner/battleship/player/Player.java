@@ -18,7 +18,7 @@ public abstract class Player {
         this.enemyBoard = new EnemyBoard();
     }
 
-    public void placeShipsAutomatically() {
+    public void placeShips() {
         for (int shipLength = SHIP_MAX_LENGTH; shipLength >= SHIP_MIN_LENGTH; shipLength--) {
             int numberOfShipsWithSelectedLengthPlaced = 0;
             while (numberOfShipsWithSelectedLengthPlaced < NUMBER_OF_SHIPS_BY_LENGTH.get(shipLength)) {

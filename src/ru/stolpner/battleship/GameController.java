@@ -13,7 +13,7 @@ public class GameController {
     }
 
     public void startGame() {
-        bot.placeShipsAutomatically();
-        human.placeShipsAutomatically();
+        bot.placeShips();
+        human.placeShips();
     }
 }
