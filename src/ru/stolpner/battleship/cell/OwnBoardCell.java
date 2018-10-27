@@ -8,11 +8,13 @@ public class OwnBoardCell {
     private int x;
     private int y;
     private Ship ship;
-    private boolean isHit;
+    private boolean isShot;
 
     public OwnBoardCell(int x, int y) {
         this.x = x;
         this.y = y;
+        this.ship = null;
+        this.isShot = false;
     }
 
     public Optional<Ship> getShip() {

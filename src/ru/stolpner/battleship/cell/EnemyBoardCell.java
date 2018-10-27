@@ -9,5 +9,15 @@ public class EnemyBoardCell {
     public EnemyBoardCell(int x, int y) {
         this.x = x;
         this.y = y;
+        this.isShot = false;
+        this.isHit = false;
+    }
+
+    public boolean isShot() {
+        return isShot;
+    }
+
+    public boolean isHit() {
+        return isHit;
     }
 }
